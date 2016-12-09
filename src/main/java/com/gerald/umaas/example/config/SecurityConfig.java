@@ -14,19 +14,17 @@ import com.gerald.umaas.example.security.AppAuthenticationProvider;
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private AppAuthenticationProvider provider;
-	private static final String APP_KEY = "appKey";
+	private static final String APP_KEY = "helloUMAAS";
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		  http
           .authorizeRequests()
           .antMatchers("/home/**")
           .authenticated()
-          .antMatchers("/page1/**")
-          .hasAnyRole("ONE")
-          .antMatchers("/page2/**")
-          .hasAnyRole("TWO")
-          .antMatchers("/page3/**")
-          .hasAnyRole("THREE")
+          .antMatchers("/regular/**")
+          .hasAnyRole("REGULAR")
+          .antMatchers("/admin/**")
+          .hasAnyRole("ADMIN")
           .anyRequest().permitAll()
           .and()
           .formLogin()
