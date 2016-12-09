@@ -1,4 +1,4 @@
-package com.gerald.starter.springboot;
+package com.gerald.umaas.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

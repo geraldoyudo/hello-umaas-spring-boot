@@ -1,4 +1,4 @@
-package com.gerald.starter.springboot.config;
+package com.gerald.umaas.example.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.web.client.RestTemplate;
 
-import com.gerald.starter.springboot.security.AppAuthenticationProvider;
+import com.gerald.umaas.example.security.AppAuthenticationProvider;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter{

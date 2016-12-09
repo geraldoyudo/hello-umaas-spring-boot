@@ -1,4 +1,4 @@
-package com.gerald.starter.springboot.security;
+package com.gerald.umaas.example.security;
 
 import java.util.Collection;
 import java.util.HashMap;

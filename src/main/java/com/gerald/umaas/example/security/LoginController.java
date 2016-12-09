@@ -1,4 +1,4 @@
-package com.gerald.starter.springboot.security;
+package com.gerald.umaas.example.security;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
